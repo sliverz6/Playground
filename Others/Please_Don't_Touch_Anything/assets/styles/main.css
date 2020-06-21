@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+#title-page {
+    visibility: visible;
+    z-index: 10;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: #fff;
+    transition: opacity 0.3s ease-out;
+    opacity: 1;
+}
+
+#title-page.remove {
+    visibility: hidden;
+    opacity: 0;
+}
+
+#game-start-button {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+    padding: 10px;
+}

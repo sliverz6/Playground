@@ -1,0 +1,107 @@
+.backdrop {
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 5;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 30vh;
+    left: 35%;
+    z-index: 10;
+    width: 30%;
+    max-width: 90%;
+    padding: 2rem;
+    background: #fff;
+    border: 3px solid #438a5e;
+    border-radius: 10px;
+}
+
+.modal__title {
+    font-weight: 400;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.modal__form {
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+.form__box {
+    margin: 1rem 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.form__box label {
+    font-size: 1.2rem;
+}
+
+.form__box select {
+    width: 80%;
+    border-radius: 5px;
+    border: 1px solid #438a5e;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+}
+
+.form__box input {
+    width: 80%;
+    border-radius: 5px;
+    border: 1px solid #438a5e;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+}
+
+.form__btn {
+    display: block;
+    width: 100%;
+    margin: 3rem auto 0;
+    border-radius: 10px;
+    padding: 0.5rem 1.5rem;
+    font: inherit;
+    font-size: 1.5rem;
+    font-weight: 300;
+    border: 1px solid #c85743;
+    background: #c85743;
+    color: #fff;
+    transition: color 0.2s, background-color 0.2s;
+    cursor: pointer;
+}
+
+.form__btn:hover,
+.form__btn:active {
+    background: #fff;
+    color: #c85743;
+}
+
+/* Dynamic */
+
+.backdrop.visible {
+    display: block;
+}
+
+.modal.visible {
+    display: block;
+    animation: fade-slide-in 0.5s forwards ease-out;
+}
+
+@keyframes fade-slide-in {
+    from {
+        transform: translateY(5rem);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

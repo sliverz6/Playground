@@ -1,0 +1,150 @@
+.main {
+    width: 80rem;
+    max-width: 90%;
+    margin: 3rem auto;
+    padding: 2rem;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(80, 80, 80, 0.1);
+}
+
+.date {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.date__current,
+.date__remain {
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.date__remain span {
+    font-weight: 700;
+    color: #436f8a;
+}
+
+.profile {
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.profile__user {
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+.funds {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 1rem 4rem;
+}
+
+.funds__info {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 48%;
+    padding: 2rem;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.funds__info--available {
+    background: #438a5e;
+}
+
+.funds__info--expense {
+    background: #436f8a;
+}
+
+.funds__title--available,
+.funds__title--expense {
+    font-weight: 400;
+    margin-top: 0.5rem;
+}
+
+.funds__money--available,
+.funds__money--expense {
+    font-size: 3.5rem;
+    font-weight: 400;
+}
+
+.funds__title--available,
+.funds__money--available {
+    color: #fff;
+}
+
+.funds__title--expense,
+.funds__money--expense {
+    color: #fff;
+}
+
+.expense {
+    border-top: 1px solid #ccc;
+    padding: 2rem 1rem;
+}
+
+.expense-header {
+    height: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.expense-header__title {
+    text-align: left;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.expense-header__add-btn {
+    border-radius: 10px;
+    padding: 0.5rem 1.5rem;
+    font: inherit;
+    font-size: 1.5rem;
+    font-weight: 300;
+    border: 1px solid #c85743;
+    background: #c85743;
+    color: #fff;
+    transition: color 0.2s, background-color 0.2s;
+    cursor: pointer;
+}
+
+.expense-header__add-btn:hover,
+.expense-header__add-btn:active {
+    background: #fff;
+    color: #c85743;
+}
+
+.expense-header__add-btn:focus {
+    outline: none;
+}
+
+.expense-log {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+.expense-log__item {
+    margin: auto;
+    width: 80%;
+    display: flex;
+    padding: 1rem;
+    font-size: 1.2rem;
+    justify-content: space-between;
+}
+
+.expense-log__item div {
+    width: 25%;
+    text-align: center;
+}
+
+.expense-log__item--header {
+    border-bottom: 1px solid #ccc;
+    font-size: 1.3rem;
+    font-weight: 700;
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weekly Expense Tracker</title>
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <!-- STYLES -->
+    <link rel="stylesheet" href="assets/styles/main.css">
+    <link rel="stylesheet" href="assets/styles/shared.css">
+    <link rel="stylesheet" href="assets/styles/header.css">
+    <link rel="stylesheet" href="assets//styles/modal.css">
+
+    <!-- SCRIPTS -->
+    <script src="assets/scripts/script.js" defer></script>
+</head>
+
+<body>
+    <header class="main-header">
+        <h1 class="main-header__brand"><a href="index.html">Weekly Expense Tracker</a></h1>
+    </header>
+
+    <main class="main">
+        <section class="date">
+            <h2 class="date__current">2020/06/20 SAT</h2>
+            <h3 class="date__remain">D-Day: <span>-3 day</span></h2>
+        </section>
+
+        <section class="profile">
+            <h2 class="profile__user">Hello, Lee Seung Jae</h2>
+        </section>
+
+        <section class="funds">
+            <div class="funds__info funds__info--available">
+                <h3 class="funds__title--available">한도 금액</h3>
+                <p class="funds__money--available">10,000원</p>
+            </div>
+            <div class="funds__info funds__info--expense">
+                <h3 class="funds__title--expense">지출 금액</h3>
+                <p class="funds__money--expense">-5,000원</p>
+            </div>
+        </section>
+
+        <section class="expense">
+            <header class="expense-header">
+                <h2 class="expense-header__title">Expense Track</h2>
+                <button class="expense-header__add-btn">Add</button>
+            </header>
+            <div class="expense-log">
+                <ul class="expense-log__list">
+                    <li class="expense-log__item expense-log__item--header">
+                        <div>종류</div>
+                        <div>날짜</div>
+                        <div>내용</div>
+                        <div>지출 금액</div>
+                    </li>
+                    <li class="expense-log__item">
+                        <div>식비</div>
+                        <div>2020년 6월 20일</div>
+                        <div>맥도</div>
+                        <div>-3,000원</div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <div class="backdrop"></div>
+    <div class="modal">
+        <h2 class="modal__title">지출 추가</h2>
+        <form action="#" method="POST" class="modal__form">
+            <div class="form__box">
+                <label for="type">종류</label>
+                <select id="type">
+                    <option>식비</option>
+                    <option>교육</option>
+                    <option>교통</option>
+                    <option>월세</option>
+                    <option>잡다</option>
+                </select>
+            </div>
+            <div class="form__box">
+                <label for="content">내용</label>
+                <input type="text" id="content">
+            </div>
+            <div class="form__box">
+                <label for="amount">금액</label>
+                <input type="number" id="amount">
+            </div>
+            <button type="submit" class="form__btn">Save</button>
+        </form>
+    </div>
+</body>
+
+</html>

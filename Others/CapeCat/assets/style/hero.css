@@ -1,0 +1,44 @@
+.hero {
+    padding-top: 200px;
+    height: 600px;
+    background: #e8ead3;
+}
+
+.hero__title {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 300;
+    color: #654062;
+}
+
+.hero__sub-title {
+    text-align: center;
+    color: #654062;
+    font-size: 22px;
+}
+
+.hero__btn {
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.btn {
+    display: inline-block;
+    width: 150px;
+    border-radius: 10px;
+    border: none;
+    background: #ff9c71;
+    color: #654062;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 0.7rem;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn:hover,
+.btn:active {
+    background: #654062;
+    color: #e8ead3;
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="assets/styles/style.css"">
+    <script src="https://kit.fontawesome.com/c21d6386da.js" crossorigin="anonymous"></script>
+    <script src="assets/scripts/script.js" defer></script>
+</head>
+
+<body>
+    <header id="main-header">
+        <h1 class="main-header__logo"><a href="./index.html">Tic Tac Toe</a></h1>
+    </header>
+
+    <main>
+        <section id="description">
+            <h1 class="description__title">Let's play<br><strong>Tic-Tac-Toe</strong></h1>
+            <button class="start-btn">Start new game</button>
+        </section>
+        <section id="preview">
+            <div class="preview">
+                <div class="preview__circle">
+                    <i class="far fa-circle"></i>
+                </div>
+                <div class="preview__x-mark">
+                    <i class="fas fa-times"></i>
+                </div>
+            </div>
+        </section>
+        <section id="board">
+            <section class="board__result">
+                <div class="board__result__winner-message">player 1 Win!</div>
+                <button class="board__result__restart-btn">Restart</button>
+            </section>
+            <header class="board__header">
+                <div class="board__player-1">
+                    <h2 class="player-1__name">PLAYER 1</h2>
+                    <div class="player-1__info">
+                        <h3 class="player-1__info--score">3</h3>
+                        <div class="player-1__info--order-mark"></div>
+                    </div>
+                </div>
+                <div class="board__player-2">
+                    <h2 class="player-2__name">PLAYER 2</h2>
+                    <div class="player-2__info">
+                        <h3 class="player-2__info--score">2</h3>
+                        <div class="player-2__info--order-mark"></div>
+                    </div>
+                </div>
+            </header>
+            <section class="board__map">
+                <table class="map">
+                    <tr class="map__cells">
+                        <td class="map__cell"></td>
+                        <td class="map__cell"></td>
+                        <td class="map__cell"></td>
+                    </tr>
+                    <tr class="map__cells">
+                        <td class="map__cell"></td>
+                        <td class="map__cell"></td>
+                        <td class="map__cell"></td>
+                    </tr>
+                    <tr class="map__cells">
+                        <td class="map__cell"></td>
+                        <td class="map__cell"></td>
+                        <td class="map__cell"></td>
+                    </tr>
+                </table>
+            </section>
+        </section>
+    </main>
+
+    <footer id="main-footer">
+        <h1 class="main-footer__title">Made By Lee</h1>
+        <h2 class="main-footer__sub-title">2020.06.11</h2>
+    </footer>
+</body>
+
+</html>

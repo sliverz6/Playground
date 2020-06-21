@@ -1,0 +1,84 @@
+#main-page {
+    width: 100vw;
+    height: 100vh;
+    background: #727680;   
+}
+
+#screen {
+    position: absolute;
+    left: 50%;
+    top: 5%;
+    transform: translateX(-50%);
+    width: 500px;
+    height: 300px;
+    background: #518d5e;
+    border: 1px solid #dcdedf;
+}
+
+#control-board {
+    position: absolute;
+    left: 50%;
+    bottom: 5%;
+    transform: translateX(-50%);
+    width: 1000px;
+    height: 500px;
+    background: #bfc4cc;
+    border: 1px solid #dcdedf;
+}
+
+#button {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 100px;
+    border: 2px solid #333;
+    border-radius: 50%;
+    background: #df3731;
+    box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.1);
+    outline: none;
+    cursor: pointer;
+}
+
+#button:hover {
+    background: #e4504b;
+}
+
+#button:active {
+    background: #a3231f;
+    box-shadow: none;
+}
+
+#restart {
+    cursor: pointer;
+    position: absolute;
+    left: 50%;
+    bottom: -30px;
+    transform: translate(-50%);
+    width: 100px;
+    height: 100px;
+    text-align: center;
+}
+
+#restart h2 {
+    color: #a3231f;
+}
+
+#restart:hover .restart-btn {
+    background: #e4504b;
+}
+
+#restart:active .restart-btn {
+    background: #a3231f;
+}
+
+.restart-btn {
+    cursor: pointer;
+    width: 100%;
+    height: 20%;
+    border: 2px solid #333;
+    background: #df3731;
+    box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.1);
+    outline: none;
+}
