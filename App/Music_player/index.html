@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c21d6386da.js" crossorigin="anonymous"></script>
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <div id="music-player">
+        <audio></audio>
+        <section class="info">
+            <h1 class="info__title"></h1>
+            <div class="time">
+                <p class="time__current"></p>
+                <p class="time__entire"></p>
+            </div>
+            <div class="time-bar">
+                <progress max="100" value="0">100</progress>
+            </div>
+        </section>
+        <section class="control">
+            <div>
+                
+            </div>
+            <div>
+                <button class="control__btn btn--play"><i class="fas fa-play"></i></button>
+                <button class="control__btn btn--stop"><i class="fas fa-pause"></i></button>
+            </div>
+        </section>
+        <div>
+            <form class="form">
+                <label for="mp3">Mp3</label>
+                <input class="file" type="file" id="mp3">
+                <button type="submit">Insert</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

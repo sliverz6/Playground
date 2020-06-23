@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #80a0af;
+}
+
+.time {
+    display: flex;
+    justify-content: space-between;
+}
+
+.time__current,
+.time__entire {
+    font-size: 2rem;
+    margin: 1rem;
+}
+
+.time-bar {
+    width: 100%;
+    height: 2rem;
+}
+
+.time-bar progress {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.control__btn {
+    margin: 2rem auto;
+    display: none;
+    width: 5rem;
+    height: 5rem;
+    border: none;
+    font-size: 2rem;
+    border-radius: 20px;
+    background: #63a8c8;
+    cursor: pointer;
+}
+
+.control__btn.visible {
+    display: block;
+}
+
+.control__btn:hover,
+.control__btn:active {
+    background: #7dc1e0;
+}
+
+.control__btn:focus {
+    outline: none;
+}
+
+
+#music-player {
+    max-width: 90%;
+    width: 50rem;
+    height: 30rem;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background: #fff;
+}
